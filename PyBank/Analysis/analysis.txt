@@ -1,0 +1,10 @@
+There are 86 months in the dataset
+
+The net total amount of Profits/Losses is 22564198 over the period of the dataset
+
+The average of these changes is: $-8311.11
+
+The greatest increase in profits is $1862002 and it was on Aug-16
+
+The greatest decrease in profits is $-1825558 and it was on Feb-14
+
