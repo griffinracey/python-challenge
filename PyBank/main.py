@@ -64,7 +64,7 @@ with open(path) as file:
     # print out greatest decrease and date
     print(f'The greatest decrease in profits is ${change_list[min_index]} and it was on {date_list[min_index + 1]}')
 
-# Open the file using "write" mode. Specify the variable to hold the contents
+# Choosing file to send text output to
 output_file = os.path.join("Analysis", "analysis.txt")
 
 with open(output_file, 'w') as csvfile:
@@ -72,6 +72,7 @@ with open(output_file, 'w') as csvfile:
     # Initialize csv.writer
     csvwriter = csv.writer(csvfile, delimiter=',')
     
+    # Take terminal outputs and send to txt file
     csvwriter.writerow([f'There are {row_count} months in the dataset'])
     csvwriter.writerow([f'The net total amount of Profits/Losses is {sum(profit_list)} over the period of the dataset'])
     csvwriter.writerow([f'The average of these changes is: ${round((sum(change_list))/len(change_list),2)}'])
